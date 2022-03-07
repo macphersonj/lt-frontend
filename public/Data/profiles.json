@@ -1,0 +1,99 @@
+[
+    {
+        "userProfile": "@jamesmac",
+        "userImg": "/assets/profile-picture.png",
+        "links": [
+            {
+                "linkType": "classicLink",
+                "title": "My Website!",
+                "uri": "https://jamesmac.com.au"
+            },
+            {
+                "linkType": "classicLink",
+                "title": "LinkedIn",
+                "uri": "https://linkedin.com"
+            },
+            {
+                "linkType": "showsLink",
+                "title": "Shows",
+                "showArray": [
+                    {
+                        "date": "07 March 2022",
+                        "venue": "Enmore Theatre, Newtown, NSW, Australia",
+                        "uri": "https://www.songkick.com/concerts/40268113-king-gizzard-and-the-lizard-wizard-at-enmore-theatre",
+                        "isSoldOut": false
+                    },
+                    {
+                        "date": "18 March 2022",
+                        "venue": "Lollapalooza",
+                        "uri": "https://www.songkick.com/festivals/1235-lollapalooza/id/40085104-lollapalooza-2022",
+                        "isSoldOut": true
+                    },
+                    {
+                        "date": "23 March 2022",
+                        "venue": "Cine Joia, São Paulo, Brazil",
+                        "uri": "https://www.songkick.com/concerts/40253244-king-gizzard-and-the-lizard-wizard-at-cine-joia",
+                        "isSoldOut": false
+                    }
+                ]
+            },
+            {
+                "linkType": "musicLink",
+                "title": "Music",
+                "platformArray": [
+                    {
+                        "platform": "Spotify",
+                        "icon": "assets/icons/spotify.svg",
+                        "uri": "https://open.spotify.com/track/4VtNDouDk6gLgopBhp9di6?si=8e4c2afe03f04e97" 
+                    },
+                    {
+                        "platform": "Apple Music",
+                        "icon": "assets/icons/apple-music.svg",
+                        "uri": "https://open.spotify.com/track/4VtNDouDk6gLgopBhp9di6?si=8e4c2afe03f04e97" 
+                    },
+                    {
+                        "platform": "Soundcloud",
+                        "icon": "assets/icons/soundcloud.svg",
+                        "uri": "https://soundcloud.com/king-gizzard-the-lizard-wizard" 
+                    },
+                    {
+                        "platform": "YouTube Music",
+                        "icon": "assets/icons/youtube.svg",
+                        "uri": "https://soundcloud.com/king-gizzard-the-lizard-wizard" 
+                    },
+                    {
+                        "platform": "Deezer",
+                        "icon": "assets/icons/deezer.svg",
+                        "uri": "https://soundcloud.com/king-gizzard-the-lizard-wizard" 
+                    },
+                    {
+                        "platform": "Tidal",
+                        "icon": "assets/icons/tidal.svg",
+                        "uri": "https://soundcloud.com/king-gizzard-the-lizard-wizard" 
+                    },
+                    {
+                        "platform": "Bandcamp",
+                        "icon": "assets/icons/bandcamp.svg",
+                        "uri": "https://soundcloud.com/king-gizzard-the-lizard-wizard" 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "userProfile": "@janeDoe",
+        "userImg": "/assets/profile-picture.png",
+        "links": [
+            {
+                "linkType": "classicLink",
+                "title": "Spotify",
+                "uri": "https://jamesmac.com.au"
+            },
+            {
+                "linkType": "classicLink",
+                "title": "LinkedIn",
+                "uri": "https://jamesmac.com.au"
+            }
+        ]
+    }
+]
