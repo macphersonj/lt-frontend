@@ -8,6 +8,7 @@ This app is by no means finished - there are some TODOs in the code - but a brie
 - Far greater and more in-depth test coverage needed
 - Embedded music player is non-functional, nor does it switch platforms
 - Icon set is static, which would need to be made dynamic for a production build
+- Refactor and cleanup - in the interest of sticking to time, there are some bit of code I would like to clean up and/or make reusable
 
 Thanks for your consideration!
 
