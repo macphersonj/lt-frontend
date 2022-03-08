@@ -11,6 +11,7 @@ export const Classic = (props) => {
       onClick={() => simpleLinkHandler(props.uri)}
       bgColor={props.bgColor}
       color={props.color}
+      data-testid="classicLink"
     >
       {props.linkTitle}
     </LinkButton>

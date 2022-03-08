@@ -178,5 +178,5 @@ export const Music = (props) => {
 };
 
 // TODO
-// 1: create components for icons so we can dynamically style them
+// 1: create components & imports for icons so we can dynamically style them
 // 2: switch out platform embeds when user clicks different platforms

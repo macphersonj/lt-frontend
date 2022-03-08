@@ -13,6 +13,7 @@ export const Link = (props) => {
           uri={props.uri}
           bgColor={props.bgColor}
           color={props.color}
+          data-testid="classicLink"
         ></Classic>
       );
     case "showsLink":

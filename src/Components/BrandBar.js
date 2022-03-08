@@ -11,7 +11,7 @@ const Logo = styled.div`
 
 export const BrandBar = () => {
   return (
-    <Logo>
+    <Logo data-testid="linktreeLogo">
       <img src="assets/logo.svg" alt="Linktree" />
     </Logo>
   );
