@@ -84,7 +84,11 @@ export const Shows = (props) => {
 
   return (
     <LinkContainer>
-      <LinkButton onClick={() => showLinkHandler()}>
+      <LinkButton
+        onClick={() => showLinkHandler()}
+        bgColor={props.bgColor}
+        color={props.color}
+      >
         {props.linkTitle}
       </LinkButton>
 

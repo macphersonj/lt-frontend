@@ -121,7 +121,11 @@ export const Music = (props) => {
   };
   return (
     <LinkContainer>
-      <LinkButton onClick={() => musicLinkHandler()}>
+      <LinkButton
+        onClick={() => musicLinkHandler()}
+        bgColor={props.bgColor}
+        color={props.color}
+      >
         {props.linkTitle}
       </LinkButton>
       {musicLinkActive ? (

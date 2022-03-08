@@ -8,8 +8,12 @@ import "./App.css";
 function App() {
   const [profile, setProfile] = useState({});
   const [links, setLinks] = useState([]);
+  const [bgColor, setBgColor] = useState(null);
+  const [color, setColor] = useState(null);
 
   const getData = () => {
+    const rand = Math.floor(Math.random() * (3 - 1));
+
     fetch("Data/profiles.json", {
       headers: {
         "Content-Type": "application/json",
@@ -20,9 +24,10 @@ function App() {
         return response.json();
       })
       .then(function (profiles) {
-        const rand = Math.floor(Math.random() * (3 - 1));
         setProfile(profiles[rand]);
         setLinks(profiles[rand].links);
+        setBgColor(profiles[rand].bg);
+        setColor(profiles[rand].color);
       });
   };
   useEffect(() => {
@@ -41,12 +46,17 @@ function App() {
             title={item.title}
             showLinks={item.showArray}
             platformLinks={item.platformArray}
+            bgColor={bgColor}
+            color={color}
             key={"__uid-link_" + index}
           />
         ))}
+
       <BrandBar />
     </div>
   );
 }
 
 export default App;
+
+// TODO fix theme props - will keep for now to not go overtime.

@@ -7,7 +7,11 @@ export const Classic = (props) => {
   };
 
   return (
-    <LinkButton onClick={() => simpleLinkHandler(props.uri)}>
+    <LinkButton
+      onClick={() => simpleLinkHandler(props.uri)}
+      bgColor={props.bgColor}
+      color={props.color}
+    >
       {props.linkTitle}
     </LinkButton>
   );
