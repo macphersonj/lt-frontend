@@ -1,6 +1,8 @@
 import { Profile } from "./Components/Profile";
 import React, { useState, useEffect } from "react";
 import { Link } from "./Components/Links/Link";
+import { BrandBar } from "./Components/BrandBar";
+
 import "./App.css";
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
             key={"__uid-link_" + index}
           />
         ))}
+      <BrandBar />
     </div>
   );
 }

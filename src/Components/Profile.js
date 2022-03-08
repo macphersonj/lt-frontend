@@ -18,7 +18,7 @@ const ProfileName = styled.p`
 
 export const Profile = (props) => {
   return (
-    <div>
+    <div data-testid="userProfile">
       <ProfilePic bg={props.userImg}></ProfilePic>
       <ProfileName>{props.userName}</ProfileName>
     </div>

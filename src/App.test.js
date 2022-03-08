@@ -1,8 +1,17 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen, cleanup, fireEvent } from "@testing-library/react";
+import App from "./App";
+import { Profile } from "./Components/Profile";
+import "@testing-library/jest-dom";
 
-test('renders learn react link', () => {
+afterEach(cleanup);
+
+test("renders learn react link", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+});
+
+test("Profile renders", () => {
+  render(<Profile />);
+
+  const profile = screen.getByTestId("userProfile");
+  expect(profile).toBeInTheDocument();
 });
