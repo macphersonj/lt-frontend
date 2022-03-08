@@ -72,6 +72,7 @@ const ArrowIcon = styled.div`
 const StyledEmbedContainer = styled.div`
   width: 100%;
   margin: 10px auto;
+  position: relative;
 `;
 
 const AlbumArt = styled.div`
@@ -79,7 +80,6 @@ const AlbumArt = styled.div`
   height: 64px;
   background: url("assets/album-art.png");
   border-radius: 4px;
-  float: left;
 `;
 
 const PlayBtn = styled.div`
@@ -88,7 +88,9 @@ const PlayBtn = styled.div`
   margin: 0 0 0 50px;
   background: url("assets/icons/play.svg");
   background-size: cover;
-  float: left;
+  position: absolute;
+  top: 20px;
+  left: 40px;
 `;
 
 const PlayBar = styled.div`
@@ -114,6 +116,10 @@ export const Music = (props) => {
 
   const musicLinkHandler = () => {
     setMusicLinkActive(!musicLinkActive);
+
+    if (embedPlayer) {
+      setEmbedPlayer(!embedPlayer);
+    }
   };
 
   const embedHandler = () => {
